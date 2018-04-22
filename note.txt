@@ -1,0 +1,36 @@
+https://angular.io/guide/quickstart
+
+Step 1. Install the Angular CLI globally.
+=> npm install -g @angular/cli
+
+Step 2. Create a new project
+=> ng new learn-angular
+
+Step 3: Serve the application
+=> cd learn-angular
+=> ng serve --open
+
+install YARN
+=> npm install yarn -g
+
+install 2 extensions for VS Code
+- npm Intellisense
+- Path Intellisense
+
+install libraries: Bootstrap and JQuery (either 1 of these ways)
+=> YARN: yarn add peer boostrap jquery
+=> NPM: npm install --save peer bootstrap jquery
+
+create new component by Angular CLI (either 1 of these ways)
+=> ng g c book
+=> ng g component book
+
+https://www.youtube.com/watch?v=4PMffDQQdBU&list=PLzrVYRai0riTA1m7Dasg8eraBr6R9nFgC&index=24
+--> 24
+https://github.com/vanpho93/learn-angular/blob/master/snippet.txt
+
+
+
+
+
+

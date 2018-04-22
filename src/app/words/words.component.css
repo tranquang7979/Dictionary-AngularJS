@@ -1,0 +1,7 @@
+.word-item{
+    background-color: silver;
+    padding:10px;
+    border-radius: 5px;
+    max-width: 200px;
+    margin:5px;
+}

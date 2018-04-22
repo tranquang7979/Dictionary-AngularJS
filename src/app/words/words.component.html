@@ -1,0 +1,27 @@
+
+<div *ngIf="isShowForm">
+  <div>
+    <input placeholder="Enter English" [(ngModel)]="langEN" />
+  </div>
+  <div>
+    <input placeholder="Enter tiếng Việt" [(ngModel)]="langVN" />
+  </div>
+</div>
+<button (click)="addLanguage()">Add</button>
+
+<div>
+  <select [(ngModel)]="filter" (change)="filterChange()">
+    <option *ngFor="let option of arrFilter" value="{{option.value}}">{{option.text}}</option>
+  </select>
+</div>
+
+<ul>
+  <li class="word-item" *ngFor="let word of searchResult">
+    <p [ngStyle]="getStyle(word)">
+      EN: {{word.en}}
+    </p>
+    <p>VN: {{word.vn}}</p>
+    <button (click)="delLanguage(word)">Delete</button>
+    <button (click)="changeStatus(word)">Change to {{word.memorized ? 'Not Memorized' : 'Memorized'}}</button>
+  </li>
+</ul>

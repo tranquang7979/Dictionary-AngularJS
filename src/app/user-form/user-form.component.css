@@ -1,0 +1,19 @@
+hr{
+    clear:both;
+}
+.circle{
+    float:left;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: blue;
+}
+.square{
+    float:left;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: blue;
+}

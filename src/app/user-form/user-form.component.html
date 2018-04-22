@@ -1,0 +1,42 @@
+<hr/>
+<h1>--- COMPONENT DIRECTIVE ---</h1>
+<hr/>
+Event binding
+<input placeholder="Enter username" (keyup)="showEvent($event)"/>
+<h3>Your name is: {{ name }}</h3>
+
+<hr/>
+Two-way binding
+<input placeholder="Enter username" [(ngModel)]="name"/>
+
+<hr/>
+Template reference variable
+<input placeholder="Enter username" [(ngModel)]="name" #txtUsername/>
+<code>{{ txtUsername.value | json }}</code>
+
+<hr/>
+Class binding
+<h3 [style.color]="h3Color">Your name is: {{ name }}</h3>
+<div [class]="divClass"></div>
+<div [class.circle]="!isHighlight" [class.square]="isHighlight"></div>
+
+<hr/>
+<h1>--- ATTRIBUTE DIRECTIVE ---</h1>
+<hr/>
+<input placeholder="Enter username" (keyup)="showEvent($event)"/>
+<span [style.color]="h3Color" 
+      [style.fontSize]="isHighlight ? '50px' : '20px'">{{name}}</span>
+<span [ngStyle]="name.length % 2 === 0 ? evenStyle : oddStyle">{{name}}</span>
+<div [ngClass]="currentClass">{{name}}</div>
+
+<hr/>
+<h1>--- STRUCTURAL DIRECTIVE ---</h1>
+<hr/>
+<p *ngIf="isShow">Structural directive</p>
+<button (click)="isShow = !isShow">Toggle</button>
+<br/>
+<ul>
+  <li *ngFor="let subject of arrSubjects"><p>{{'Subject: ' + subject}}</p></li>
+</ul>
+
+<br/><br/>
