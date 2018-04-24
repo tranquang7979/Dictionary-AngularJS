@@ -18,5 +18,39 @@ NGFOR + INPUT<br/>
 <app-list-person></app-list-person>
 
 <hr/>
-OUTPUT => PARENT vs CHILD component<br/>
+OUTPUT => CHILD call PARENT<br/>
 <app-parent></app-parent>
+
+<hr/>
+OUTPUT => PARENT call CHILD<br/>
+<app-parent></app-parent>
+
+<hr/>
+NGCONTENT<br/>
+<app-card>
+  <p class="card-header">This is Card 1</p>
+  <h3 class="card-body">This is Card 2</h3>
+</app-card>
+<app-card>
+  <h3 class="card-body">This is Card 3</h3>
+</app-card>
+<app-card>
+  <app-child class="card-header"></app-child>
+</app-card>
+
+<hr/>
+PIPE<br/>
+<app-learn-pipe></app-learn-pipe>
+
+<hr/>
+SERVICE<br/>
+<app-ip></app-ip>
+
+<hr/>
+WEATHER<br/>
+<app-weather></app-weather>
+
+<hr/>
+NGFORM<br/>
+<app-sign-in></app-sign-in>
+

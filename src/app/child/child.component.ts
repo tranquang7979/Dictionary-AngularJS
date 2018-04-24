@@ -8,6 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class ChildComponent implements OnInit {
 
   @Output() childClick = new EventEmitter<boolean>();
+  value = 0;
 
   constructor() { }
 

@@ -2,5 +2,9 @@
     Parent component 
     Value: {{value}}
 
-    <app-child (childClick)="changeValue($event)"></app-child>
+    <app-child #child (childClick)="changeValue($event)"></app-child>
+    
+    <button (click)="child.value = child.value + 1">Add for CHILD (use TEMP variable)</button>
+    <button (click)="onAddForChild()">Add for CHILD (use VIEW CHILD)</button>
+   
 </h3>

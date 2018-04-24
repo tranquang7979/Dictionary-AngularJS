@@ -1,0 +1,15 @@
+<p>DATE pipe: {{ birthday | date:'shortTime' }}</p>
+
+<p>JSON pipe: {{ person | json }}</p>
+
+<p>UPPERCASE pipe: {{ person.name | uppercase }}</p>
+
+<p>JSON + UPPERCASE pipe: {{ person | json | uppercase }}</p>
+
+<p>ASYNC pipe: {{ addresss | async }}</p>
+
+<p>
+    Custom pipe: 
+    [ROUND UP]=> {{ 1.9 | roundNum:true:10 }} &nbsp;&nbsp;&nbsp;
+    [ROUND FLOOR]=> {{ 1.9 | roundNum:false:9 }}
+</p>

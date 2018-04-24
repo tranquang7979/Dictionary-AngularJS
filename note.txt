@@ -25,8 +25,8 @@ create new component by Angular CLI (either 1 of these ways)
 => ng g c book
 => ng g component book
 
-https://www.youtube.com/watch?v=-aKjI1W2aro&list=PLzrVYRai0riTA1m7Dasg8eraBr6R9nFgC&index=30
---> 30
+https://www.youtube.com/watch?v=Sg2bUUocvHw&index=49&list=PLzrVYRai0riTA1m7Dasg8eraBr6R9nFgC
+--> 49
 https://github.com/vanpho93/learn-angular/blob/master/snippet.txt
 
 
