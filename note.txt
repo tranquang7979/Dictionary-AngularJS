@@ -25,9 +25,11 @@ create new component by Angular CLI (either 1 of these ways)
 => ng g c book
 => ng g component book
 
-https://www.youtube.com/watch?v=Sg2bUUocvHw&index=49&list=PLzrVYRai0riTA1m7Dasg8eraBr6R9nFgC
---> 49
-https://github.com/vanpho93/learn-angular/blob/master/snippet.txt
+create server NodeJS
+- create folder 'server'
+- npm init -y (create file package.json)
+- npm install express --save
+- npm install body-parser --save
 
 
 

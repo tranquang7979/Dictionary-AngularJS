@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // use for TWO WAY binding
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // use for TWO WAY binding
 import { HttpModule } from '@angular/http';
 
 import { IpService } from './ip.service';
@@ -21,6 +21,21 @@ import { RoundPipe } from './round.pipe';
 import { IpComponent } from './ip.component';
 import { WeatherComponent } from './weather/weather.component';
 import { SignInComponent } from './sign-in.component';
+import { SignUpComponent } from './sign-up.component';
+
+import { AppRoutingModule } from './app-routing.module'; // import this module after move routers to 'app-routing.module.ts'
+/* // moved to 'app-routing.module.ts'
+import { ContactsComponent } from './contacts/contacts.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
+import { Routes, RouterModule } from '@angular/router';
+const routesConfig: Routes = [
+  { path: 'contacts', component: ContactsComponent},
+  { path: 'contact-detail', component: ContactDetailComponent},
+  { path: '', redirectTo: '/contacts', pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent}
+];*/
 
 @NgModule({
   declarations: [
@@ -38,12 +53,19 @@ import { SignInComponent } from './sign-in.component';
     RoundPipe,
     IpComponent,
     WeatherComponent,
-    SignInComponent
+    SignInComponent,
+    SignUpComponent,
+    //ContactsComponent, // moved to 'app-routing.module.ts'
+    //ContactDetailComponent, // moved to 'app-routing.module.ts'
+    //PageNotFoundComponent // moved to 'app-routing.module.ts'
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule,
+    AppRoutingModule,  // import this module after move routers to 'app-routing.module.ts'
+    //RouterModule.forRoot(routesConfig) // moved to 'app-routing.module.ts'
   ],
   providers: [IpService],
   bootstrap: [AppComponent]
