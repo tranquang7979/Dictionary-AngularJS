@@ -22,6 +22,7 @@ import { IpComponent } from './ip.component';
 import { WeatherComponent } from './weather/weather.component';
 import { SignInComponent } from './sign-in.component';
 import { SignUpComponent } from './sign-up.component';
+import { CryptoComponent } from './sign-in-crypto.component';
 
 import { AppRoutingModule } from './app-routing.module'; // import this module after move routers to 'app-routing.module.ts'
 /* // moved to 'app-routing.module.ts'
@@ -55,6 +56,7 @@ const routesConfig: Routes = [
     WeatherComponent,
     SignInComponent,
     SignUpComponent,
+    CryptoComponent
     //ContactsComponent, // moved to 'app-routing.module.ts'
     //ContactDetailComponent, // moved to 'app-routing.module.ts'
     //PageNotFoundComponent // moved to 'app-routing.module.ts'

@@ -15,4 +15,8 @@ app.post('/signin', jsonParser, (req, res) => {
     res.send(req.body);
 });
 
+app.post('/signin-crypto', jsonParser, (req, res) => {
+    res.send(req.body);
+});
+
 app.listen(3000, () => console.log('Server is running port 3000'));
