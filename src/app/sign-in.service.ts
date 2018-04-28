@@ -42,8 +42,8 @@ var Base64 = {
 
     encode: function (input) {
         var output = "";
-        var chr1, chr2, chr3 = "";
-        var enc1, enc2, enc3, enc4 = "";
+        var chr1, chr2, chr3;
+        var enc1, enc2, enc3, enc4;
         var i = 0;
 
         do {
@@ -76,8 +76,8 @@ var Base64 = {
 
     decode: function (input) {
         var output = "";
-        var chr1, chr2, chr3 = "";
-        var enc1, enc2, enc3, enc4 = "";
+        var chr1, chr2, chr3;
+        var enc1, enc2, enc3, enc4;
         var i = 0;
 
         // remove all characters that are not A-Z, a-z, 0-9, +, /, or =
